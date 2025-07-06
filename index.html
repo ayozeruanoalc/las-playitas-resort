@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- La página está en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Playitas Resort - Fuerteventura</title>
+    <link rel="icon" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="styles.css"> <!-- Plantilla CSS utilizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente utilizada en la web -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="hero"> <!-- El encabezado en sí -->
+        <nav class="nav"> <!-- Barra de navegación superior -->
+            <h1 class="logo">Las Playitas Resort</h1> <!-- Logotipo (esquina superior izquierda) -->
+            <ul class="nav-links"> <!-- Enlaces informativos (esquina superior derecha) -->
+                <li><a href="#about">Información</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Noticias</a></li>
+                <li class="dropdown">
+                    <a href="#">Habitaciones</a>
+                    <div class="dropdown-content">
+                        <a href="Aparthotel.html" target="_blank"><b>Aparthotel</b>
+                        <a href="Villa.html" target="_blank"> <b>Villa</b>
+                        <a href="Hotel.html" target="_blank"> <b>Hotel</b> </a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Redes Sociales</a>
+                    <div class="dropdown-content">
+                        <a href="https://www.facebook.com/PlayitasResort" target="_blank"> <img src="img/b763699fd1fa3bfb374442593ae642e1.png" class="photo-item">
+                        <a href="https://twitter.com/PlayitasResort" target="_blank"> <img src="img/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp" class="photo-item">
+                        <a href="https://www.instagram.com/playitasresort/?hl=es" target="_blank"> <img src="img/black-and-white-instagram-logo-on-square-with-transparent-background-free-png.webp" class="photo-item"> </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-content"> <!-- Sección restante del encabezado -->
+            <h2>Bienvenido a Las Playitas Resort</h2>
+            <p>Un paraíso para disfrutar del sol, la playa y el deporte en Fuerteventura.</p>
+            <a href="#about" class="btn">Descubre más</a>
+        </div>
+    </header>
+
+    <!-- Popup Cookies -->
+    <div class="cookie-popup" id="cookiePopup">
+        <p>Utilizamos cookies para asegurar que obtengas la mejor experiencia en nuestro sitio web. 
+        <a href="img/playitas3.jpg" target="_blank">Leer más</a>.</p>
+        <button id="acceptCookiesBtn">Aceptar</button>
+    </div>
+
+    <!-- (Se sale del encabezado) -->
+    <!-- Información -->
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Las Playitas Resort es uno de los destinos vacacionales más impresionantes de Fuerteventura, 
+        ofreciendo una variedad de actividades deportivas, playas paradisíacas y experiencias de lujo para toda la familia.</p> <br> <hr class="centered-line">
+        <br> <p>Situado en una preciosa bahía junto a Las Playitas, en el municipio de Tuineje, cuenta con una amplia gama de instalaciones 
+            deportivas donde los huéspedes pueden participar en una gran variedad de actividades. 
+            Tardará 45 minutos desde el aeropuerto en llegar al resort.</p>
+    </section>
+
+
+    <!-- Carrousel de imágenes -->
+    <section id="gallery" class="gallery">
+        <span class="separacion"><h2>Galería</h2></span>
+        <div class="carousel-container">
+            <button class="prev-btn">❮</button>
+            <div class="carousel">
+                <img src="img/playitas1.jpg" alt="Vista del resort" class="carousel-item">
+                <img src="img/playitas2.jpg" alt="Piscina del resort" class="carousel-item">
+                <img src="img/Piscinita.jpg" alt="Vista de la piscina olímpica" class="carousel-item">
+                <img src="img/Comidita2.jpg" alt="Comidita" class="carousel-item">
+                <img src="img/Tobogan.jpg" alt="Tobogan" class="carousel-item">
+            </div>
+            <button class="next-btn">❯</button>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">Habitaciones</h2><br>
+
+    <table>
+        <tr>
+            <th><p><strong>Aparthotel</strong></p></th>
+            <th><p><strong>Villa</strong></p></th>
+            <th><p><strong>Hotel</strong></p></th>
+        </tr>
+        <tr>
+            <th><p><a href="Aparthotel.html" target="_blank"> <img src="img/Playitas_Aparthotel_04.jpeg" width="450" height="300"></p></th>
+            <th><p><a href="Villa.html" target="_blank"> <img src="img/P2546_Playitas_Jesper Andersson_Rooms 9_20171106-min.jpg" width="450" height="300"></p></th>
+            <th><p><a href="Hotel.html" target="_blank"> <img src="img/Playitas_Resort.jpg" width="450" height="300"></p></th></a>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Google Maps iframe -->
+    <section class="ubicacion">
+        <br><h2 style="text-align: center;">Ubicación</h2>
+        <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4302.747461385106!2d-13.991917100829223!3d28.232737702493598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc479415045f40ab%3A0x812ae2fba28339da!2sPlayitas%20Resort!5e0!3m2!1ses!2ses!4v1728549691693!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br></div>
+    </section>
+
+    
+    <!-- Recibe más información (con formulario) -->
+    <section id="contact" class="contact">
+        <h2>Recibe más información</h2>
+        <form id="subscriptionForm" action="https://script.google.com/macros/s/AKfycbyawDS1myfcYWrdxIAbg0r-qLTfFkY790ZNpDaE2u0BNeXprUdvkrLtc1p7E0kKDY7d/exec" method="POST" target="hidden_iframe">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <input type="hidden" name="action" value="subscribe">
+            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+                <button type="submit" class="btn">Suscribirse</button>
+                <button type="button" onclick="mostrarCancelarForm()" class="btn cancelar-btn">Cancelar suscripción</button>
+            </div>
+        </form>
+        
+        <form id="cancelForm" action="https://script.google.com/macros/s/AKfycbyawDS1myfcYWrdxIAbg0r-qLTfFkY790ZNpDaE2u0BNeXprUdvkrLtc1p7E0kKDY7d/exec" method="POST" target="hidden_iframe" style="display: none;">
+            <input type="hidden" name="action" value="unsubscribe">
+            <input type="email" name="email" placeholder="Introduce tu correo para cancelar suscripción" required>
+            <button type="submit" class="btn cancelar-btn">Confirmar cancelación</button>
+        </form> 
+    </section>
+    
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Las Playitas Resort. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir la redirección tradicional
+            alert("Suscripción enviada con éxito."); // Mensaje de confirmación
+            event.target.submit(); // Enviar el formulario al iframe oculto
+        });
+    </script>
+    
+    <script>
+        // Muestra el formulario de cancelación
+        function mostrarCancelarForm() {
+            document.getElementById('subscriptionForm').style.display = 'none';
+            document.getElementById('cancelForm').style.display = 'block';
+        }
+    
+        // Manejo de cancelación con iframe oculto
+        document.getElementById('cancelForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert("Suscripción cancelada con éxito.");
+        event.target.submit();
+    });
+    </script>           
+
+</body>
+</html>

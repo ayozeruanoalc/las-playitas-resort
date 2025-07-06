@@ -1,0 +1,469 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+.hero {
+    height: 100vh;
+    background: url('img/resort-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.hero2 {
+    height: 100vh;
+    background: url('img/aparthotel2.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna para que el logotipo esté en el centro y los enlaces debajo */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    padding: 20px;
+    position: relative; /* Permite ajustar su posición */
+    background-color: #fff; /* Puedes cambiar el color de fondo si lo deseas */
+}
+
+/* Para el logotipo */
+.logo {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+    font-weight: 700; /* O el peso de la fuente que prefieras */
+    margin-bottom: 20px; /* Espacio entre el logotipo y los enlaces de navegación */
+    color: #000;
+}
+
+/* Para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Estilo para los enlaces */
+.nav-links li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.nav-links li a:hover {
+    color: #0077cc; /* Color de hover */
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* Sobre Nosotros */
+.about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Galería */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 800px; /* Tamaño del carrusel (ancho) */
+    margin: 0 auto; /* Centrado del carrusel */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 800px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 500px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.photo-item {
+    min-width: 50px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 50px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* IMPORTANTE, ARREGLO EL BOTON DE RETROCESO DEL CAROUSEL */
+}
+
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contacto */
+.contact {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del popup de cookies */
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 1000;
+    display: none; /* Oculto por defecto */
+}
+
+.cookie-popup a {
+    color: #f1c40f;
+    text-decoration: underline;
+}
+
+.cookie-popup button {
+    background-color: #f1c40f;
+    border: none;
+    color: #333;
+    padding: 8px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cookie-popup button:hover {
+    background-color: #e1b30f;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown {
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+.dropdown-content {
+    display: none; /* Oculta el contenido inicialmente */
+    position: absolute; /* Posiciona el contenido del menú desplegable */
+    background-color: white; /* Color de fondo del menú */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra para el menú */
+    z-index: 1; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 10px 0; /* Espaciado interno del menú */
+    min-width: 150px; /* Ancho mínimo del menú desplegable */
+}
+
+/* Centrar los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: #000; /* Color del texto */
+    padding: 8px 16px; /* Espacio interno en los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Cada enlace ocupa toda la línea */
+    text-align: center; /* Centra el texto en los enlaces */
+}
+
+/* Estilo adicional para el hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Muestra el menú al pasar el ratón */
+}
+
+.separacion {
+    margin-right: 50px; /* Espacio entre las partes */
+}
+
+
+
+.centered-line {
+    width: 30%;           /* Define el ancho de la línea (puedes cambiar el valor) */
+    margin: 0 auto;       /* Centra la línea horizontalmente */
+    border: 1px solid #333;  /* Estilo de la línea: grosor, tipo y color */
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Hace que las celdas compartan el mismo borde */
+}
+
+th, td {
+    border: 1px solid white; /* Define el color del borde como blanco */
+    padding: 8px; /* Añade espacio dentro de las celdas */
+    vertical-align: middle; /* Centra verticalmente el contenido */
+}
+
+th {
+    background-color: #ffffff; /* Color de fondo de las cabeceras */
+    color: black; /* Texto en blanco para las cabeceras */
+    text-align: center; /* Centra horizontalmente el texto */
+}
+
+td {
+    background-color: #ffffff; /* Color de fondo para las celdas */
+    text-align: left; /* Centra horizontalmente el texto */
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Añade espacio superior opcional */
+}
+
+iframe {
+    width: 600px;  /* Ancho del mapa */
+    height: 450px; /* Alto del mapa */
+    border: 0;     /* Sin borde */
+}
+
+
+.ubicacion {
+    padding: 50px 20px;
+    background-color: #e6eeec;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+.about-extra {
+    padding: 50px 20px;
+    background-color: #ece7e7;
+    text-align: center;
+}
+
+.about-extra td{
+    padding: 50px 20px;
+    background-color: #ece7e7;
+    text-align: center;
+    border: 0px solid white
+}
+
+.information-extra th, td {
+    padding: 44px;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    word-wrap: break-word;
+    margin-left: 500px;
+}
+
+.carousel-container-2 {
+    position: relative;
+    overflow: hidden;
+    width: 800px; /* Tamaño del carrusel (ancho) */
+    margin: 0 auto; /* Centrado del carrusel */
+}
+
+.carousel-2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-2 {
+    min-width: 800px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 500px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.photo-item-2 {
+    min-width: 600px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 400px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.prev-btn-2, .next-btn-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* IMPORTANTE, ARREGLO EL BOTON DE RETROCESO DEL CAROUSEL */
+}
+
+
+.prev-btn-2 {
+    left: 10px;
+}
+
+.next-btn-2 {
+    right: 10px;
+}
+
+.prev-btn-2:hover, .next-btn-2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.carousel-container-3 {
+    position: relative;
+    overflow: hidden;
+    width: 800px; /* Tamaño del carrusel (ancho) */
+    margin: 0 auto; /* Centrado del carrusel */
+}
+
+.carousel-3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-3 {
+    min-width: 800px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 500px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.photo-item-3 {
+    min-width: 50px; /* Tamaño de las imágenes (ancho) */   /* IMPORTANTE, CAMBIAMOS MANUALMENTE EL TAMAÑO DEL CAROUSEL */
+    height: 50px; /* Tamaño de las imágenes (altura) */
+    object-fit: cover;
+}
+
+.prev-btn-3, .next-btn-3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* IMPORTANTE, ARREGLO EL BOTON DE RETROCESO DEL CAROUSEL */
+}
+
+
+.prev-btn-3 {
+    left: 10px;
+}
+
+.next-btn-3 {
+    right: 10px;
+}
+
+.prev-btn-3:hover, .next-btn-3:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
