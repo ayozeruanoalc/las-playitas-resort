@@ -2,7 +2,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
 
-Este repositorio contiene una **página web NO OFICIAL** dedicada al hotel Playitas Resort, ubicado en Fuerteventura. El objetivo es ofrecer una demostración **básica** de desarrollo web, sin ninguna relación comercial ni institucional con el hotel.
+Este repositorio contiene una **página web NO OFICIAL** dedicada al hotel Playitas Resort, ubicado en Fuerteventura. El objetivo es ofrecer una demostración **muy básica** de desarrollo web, sin ninguna relación comercial ni institucional con el hotel.
 
 Enlace a la página web → https://ayozeruanoalc.github.io/las-playitas-resort/
 
