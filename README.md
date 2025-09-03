@@ -10,3 +10,8 @@ Enlace a la página web → https://ayozeruanoalc.github.io/las-playitas-resort/
 
 > **Esta página web no es la página oficial de Playitas Resort. No existe ningún tipo de vinculación, patrocinio ni colaboración con el hotel ni con sus propietarios. Toda la información y los contenidos presentados son de carácter demostrativo y educativo.**
 
+### 👥 Autores
+
+- **Ayoze Ruano** — 🔗 [GitHub](https://github.com/ayozeruanoalc)
+- **Enrique Reina** — 🔗 [GitHub](https://github.com/ellupe)
+- **Fabio Nesta Arteaga** — 🔗 [GitHub](https://github.com/NestX10)
